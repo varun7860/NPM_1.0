@@ -1,0 +1,23 @@
+controller_manager_ns: /
+controller_list:
+  - name: npm_planner_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - revolute_joint_1
+      - revolute_joint_2
+  
+  - name: gripper_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - joint_3
+
+  - name: push_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - joint_4

@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+
+<sdf version="1.5">
+   <world name="default">
+     <!-- A gazebo links attacher -->
+     <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+
+    <gravity>0 0 -9.8</gravity>
+    <physics default="0" name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+     <!-- Add the ground plane -->
+     <include>
+        <uri>model://ground_plane</uri>
+     </include>
+
+     <!-- Add the light Source -->
+     <include>
+        <uri>model://sun</uri>
+     </include>
+
+     <!-- Add the Table -->
+     <include>
+        <uri>model://table</uri>
+     </include>
+
+     <!-- Add the Bins -->
+     <model name="sorting_bin_red_">
+       <include>
+        <uri>model://sorting_bin_red_</uri>
+        <pose>0.75 -0.65 0.0 0 0 0</pose>
+        <static>true</static>
+       </include>
+     </model>
+
+     <model name="sorting_bin_green">
+       <include>
+        <uri>model://sorting_bin_green_</uri>
+        <pose>-0.75 -0.65 0.0 0 0 0</pose>
+        <static>true</static>
+       </include>
+     </model>
+
+     <model name="sorting_bin_blue_">
+       <include>
+        <uri>model://sorting_bin_blue_</uri>
+        <pose>0.0 -1.45 0.0 0 0 0</pose>
+        <static>true</static>
+       </include>
+     </model>
+
+     <!-- Create a pile -->
+     <model name="red_package_1">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>-0.05 0.0 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_1">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.0 -0.04 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_1">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.05 0.05 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_2">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.03 0.0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_2">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.01 -0.03 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_2">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.03 0.06 0.35 0.0 0.0 -0.7</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_3">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.02 0.02 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_3">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.015 0.0 0.35 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_3">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.02 0.06 0.35 0.0 0.0 -0.25</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <!-- _______________________ -->
+
+      <model name="red_package_4">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>-0.05 0.0 0.4 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_4">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.0 -0.04 0.4 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_4">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>-0.05 0.05 0.4 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_5">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.03 0.0.4 0.0 0.0 -0.75</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_5">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.01 -0.03 0.4 0.0 0.0 1.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_5">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.03 0.06 0.4 0.0 0.0 -0.7</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_6">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.02 0.02 0.4 0.0 0.0 0.2</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_6">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.015 0.0 0.4 0.0 0.0 0.5</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_6">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.02 0.06 0.4 0.0 0.0 -0.6</pose>
+           <static>false</static>
+       </include>
+     </model>
+     <!-- ________________________ -->
+     
+     <model name="red_package_7">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>-0.05 0.0 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_7">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.0 -0.04 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_7">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.05 0.05 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_8">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>0.03 0.0.45 0.0 0.0 -0.75</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_8">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.01 -0.03 0.45 0.0 0.0 1.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_8">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>-0.03 0.06 0.45 0.0 0.0 -0.7</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_9">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.02 0.02 0.45 0.0 0.0 0.2</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_9">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.015 0.0 0.45 0.0 0.0 0.5</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_9">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>-0.02 0.06 0.45 0.0 0.0 -0.6</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <!-- _______________________________ -->
+
+      <model name="red_package_10">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>-0.05 0.0 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_10">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.0 -0.04 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_10">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>-0.05 0.05 0.45 0.0 0.0 0.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_11">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.03 0.0.48 0.0 0.0 -0.75</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_11">
+       <include>
+           <uri>model://package_blue</uri>
+           <pose>0.01 -0.03 0.48 0.0 0.0 1.0</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_11">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>-0.03 0.06 0.48 0.0 0.0 -0.7</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="red_package_12">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.02 0.02 0.45 0.0 0.0 0.2</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="green_package_12">
+       <include>
+           <uri>model://package_red</uri>
+           <pose>0.015 0.0 0.48 0.0 0.0 0.5</pose>
+           <static>false</static>
+       </include>
+     </model>
+
+     <model name="blue_package_12">
+       <include>
+           <uri>model://package_green</uri>
+           <pose>-0.02 0.06 0.48 0.0 0.0 -0.6</pose>
+           <static>false</static>
+       </include>
+     </model>
+     
+
+
+     <!-- Add the manipulator -->
+     <!--<include>
+        <uri>model://scarapulator</uri>
+        <pose>0.0 -0.6 0.0 0.0 0.0 0.0</pose>
+     </include>-->
+
+     <!-- Add RGB Camera -->
+     <model name="RGB_camera">
+      <include>
+         <uri>model://Kinect</uri>
+         <pose>-0.0 0.0 1.2 0.0 1.57 1.57</pose>
+         <view_controller>orbit</view_controller>
+         <projection_type>perspective</projection_type>
+         <static>true</static>
+      </include>
+     </model>
+
+   </world>
+</sdf>
