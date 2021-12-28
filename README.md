@@ -8,8 +8,9 @@ NPM is a Non - Prehensile Manipulator I have built in ROS for Pushing and Flatte
 In the municipal waste recycling industry, recyclables are not pre-sorted and are sent to a Material Recovery Facility (MRF) for sorting. Laborers at conveyor belts will separate desired materials from undesired materials. Working conditions are unpleasant and tedious.Sorting the pile of waste is not easy and takes lots of time. A solution should be developed which will aim to automate certain aspects of sorting the pile of waste.
 
 ## About NPM-1.0
+NPM is a Non -prehensile Scara Manipulator made for flattening and sorting the pile of objects in a cluttered environment. It uses a single horizontal link(gripper in pink colour in the above image) which can rotate from 0 - 180 degrees to push and sort the objects.
 
-## Flattening Pile
+## Flattening the Pile
 ![node_graph](npm_1/implementation/pile.png)
 
 
@@ -37,6 +38,8 @@ Install Moveit
 
 ## NPM - ROS Package
 
+Note: The Project is still not completed and is under process of development.
+
 Building the package
 
 - `catkin build npm_1 npm_1_config_1` or `catkin make npm_1 npm_1_config_1`
@@ -53,5 +56,5 @@ Run the Node for communication with the Robot
 
 
 
-
+## Demonstration Video.
 
