@@ -22,7 +22,7 @@ The flattening of pile involves 3 main steps:
 
 
 ## Pushing Manipulation Gripper
-![node_graph](npm_1/implementation/single_gripper.png)
+![node_graph](npm_1/implementation/gripper.png)
 
 ## Installations
 ROS --Version
