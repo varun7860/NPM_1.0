@@ -59,7 +59,7 @@ Launching the Robot in Gazebo
 
 Run the Node for communication with the Robot
 
-- `rosrun sociopulator robot_1.py`
+- `rosrun npm_1 robot_1.py`
 
 
 
