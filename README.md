@@ -67,6 +67,6 @@ Run the Node for communication with the Robot
 
 [![alt text][1]][2]
 
-[1]: https://github.com/varun7860/Arduino-projects/blob/master/The%20Sorcerer's%20Door/Images/Output%20Video.jpg
+[1]: https://github.com/varun7860/NPM_1.0/tree/main/npm_1/implementation/video.png
 [2]: https://youtu.be/RCHOyj8d-fY
 
