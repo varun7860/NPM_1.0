@@ -39,9 +39,9 @@ Building the package
 
 - `source ~/catkin_ws/devel/setup.bash`
 
-Launching the Socioulator Robot
+Launching the Robot in Gazebo
 
-- `roslaunch npm_1 robot.launch`
+- `roslaunch npm_1 robot_2.launch`
 
 Run the Node for communication with the Robot
 
