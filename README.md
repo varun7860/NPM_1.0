@@ -1,5 +1,5 @@
 # NPM_1.0
-![node_graph](npm_1/implementation/single_gripper.png)
+![node_graph](npm_1/implementation/npm.png)
 
 
 NPM is a Non - Prehensile Manipulator I have built in ROS for Pushing and Flattening piles. This project is based on an environment which consists of Table, a pile of boxes resting on the table, Kinect Camera mounted parallel to the table and the Scara Manipulator. The main aim in the project is to flatten the pile as fast as possible with the help of robotic arm and the depth camera without the boxes falling off the table.
