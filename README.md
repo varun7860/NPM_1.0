@@ -14,11 +14,11 @@ NPM is a Non -prehensile Scara Manipulator made for flattening and sorting the p
 ![node_graph](npm_1/implementation/pile.png)
 
 The flattening of pile involves 3 main steps:
-- Detection of the Pile: The detection of pile is done by the kinect camera mounted at the top above the table.The detection of this pile is done by processing the depth information of the image.
+- `Detection of the Pile`: The detection of pile is done by the kinect camera mounted at the top above the table.The detection of this pile is done by processing the depth information of the image.
 
-- Level Sets: Level sets is set of level curves which divides the shapes into set of different heights.Level curve is the specific height of shape. For example, lets say there is a building of 15 floors. These individual floors are nothing but different level curves of the building. The combination of these all floors is called a level set. Zero level curve is the first floor and final level curve is the 15th floor of the building. So basically the robot knows how much the pile is flattened or not flattened with the help of these level curves.
+- `Level Sets`: Level sets is set of level curves which divides the shapes into set of different heights.Level curve is the specific height of shape. For example, lets say there is a building of 15 floors. These individual floors are nothing but different level curves of the building. The combination of these all floors is called a level set. Zero level curve is the first floor and final level curve is the 15th floor of the building. So basically the robot knows how much the pile is flattened or not flattened with the help of these level curves.
 
-- Pushing: Pushing manipulation is kind of manipulation in which the robotic arm pushes the objects to a specific distance. In pile sorting, this arm uses pushing manipulation to flatten the pile by the cutting the level curves one by one or altogether depending upon the situtation.
+- `Pushing`: Pushing manipulation is kind of manipulation in which the robotic arm pushes the objects to a specific distance. In pile sorting, this arm uses pushing manipulation to flatten the pile by the cutting the level curves one by one or altogether depending upon the situtation.
 
 
 ## Pushing Manipulation Gripper
