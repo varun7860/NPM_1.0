@@ -63,7 +63,7 @@ Run the Node for communication with the Robot
 
 
 
-## Demonstration Video.
+## Demonstration Video.(Click on the Image to see the robot in action)
 
 [![alt text][1]][2]
 
