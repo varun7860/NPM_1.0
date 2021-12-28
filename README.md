@@ -13,7 +13,7 @@ In the municipal waste recycling industry, recyclables are not pre-sorted and ar
 ROS --Version
 
 - ROS Melodic : Ubuntu 18.04
-- Other versions might be supported. It just that we have tested our project on ros melodic and it works completely fine
+- Other versions might be supported. It just that I have tested the project on ros melodic and it works completely fine
 
 Install ROS Controller
 
