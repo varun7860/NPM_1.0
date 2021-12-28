@@ -6,6 +6,8 @@ NPM is a Non - Prehensile Manipulator I have built in ROS for Pushing and Flatte
 ## Problem Description
 In the municipal waste recycling industry, recyclables are not pre-sorted and are sent to a Material Recovery Facility (MRF) for sorting. Laborers at conveyor belts will separate desired materials from undesired materials. Working conditions are unpleasant and tedious.Sorting the pile of waste is not easy and takes lots of time. A solution should be developed which will aim to automate certain aspects of sorting the pile of waste.
 
+## About NPM-1.0
+
 ## Pushing Manipulation Gripper
 
 
@@ -28,7 +30,7 @@ Install Moveit
 - `sudo apt-get install moveit`
 
 
-## How to use the package
+## NPM - ROS Package
 
 Building the package
 
@@ -45,6 +47,6 @@ Run the Node for communication with the Robot
 - `rosrun sociopulator robot_1.py`
 
 
-## About NPM-1.0
 
-## NPM - ROS Package
+
+
