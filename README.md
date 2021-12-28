@@ -6,7 +6,43 @@ NPM is a Non - Prehensile Manipulator I have built in ROS for Pushing and Flatte
 ## Problem Description
 In the municipal waste recycling industry, recyclables are not pre-sorted and are sent to a Material Recovery Facility (MRF) for sorting. Laborers at conveyor belts will separate desired materials from undesired materials. Working conditions are unpleasant and tedious.Sorting the pile of waste is not easy and takes lots of time. A solution should be developed which will aim to automate certain aspects of sorting the pile of waste.
 
+## Pushing Manipulation Gripper
+
+
 ## Installations
+ROS --Version
+
+- ROS Melodic : Ubuntu 18.04
+- Other versions might be supported. It just that we have tested our project on ros melodic and it works completely fine
+
+Install ROS Controller
+
+- `sudo apt-get update` 
+- `sudo apt-get upgrade` 
+- `sudo apt-get dist-upgrade` 
+- `rosdep update`
+- `sudo apt-get install ros*controller*`
+
+Install Moveit
+
+- `sudo apt-get install moveit`
+
+
+## How to use the package
+
+Building the package
+
+- `catkin build npm_1 npm_1_config_1` or `catkin make npm_1 npm_1_config_1`
+
+- `source ~/catkin_ws/devel/setup.bash`
+
+Launching the Socioulator Robot
+
+- `roslaunch npm_1 robot.launch`
+
+Run the Node for communication with the Robot
+
+- `rosrun sociopulator robot_1.py`
 
 
 ## About NPM-1.0
