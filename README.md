@@ -10,6 +10,8 @@ In the municipal waste recycling industry, recyclables are not pre-sorted and ar
 ## About NPM-1.0
 NPM is a Non -prehensile Scara Manipulator made for flattening and sorting the pile of objects in a cluttered environment. It uses a single horizontal link(gripper in pink colour in the above image) which can rotate from 0 - 180 degrees to push and sort the objects.
 
+## What is Non-Prehensile Manipulation
+
 ## Flattening the Pile
 ![node_graph](npm_1/implementation/pile.png)
 
